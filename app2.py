@@ -15,7 +15,7 @@ st.set_page_config(
 @st.cache_resource
 def load_resources():
     # Load trained model
-    model = joblib.load("gb_model.pkl")
+    model = joblib.load("model2.pkl")
     
     # Load dataset to recreate scalers on the fly
     data = pd.read_excel('total_data_KR10_70_Rs.xlsx', engine='openpyxl')
